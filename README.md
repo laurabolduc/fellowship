@@ -1,8 +1,8 @@
 This project used game camera images taken in series of 3 when motion was detected. 
-The binary image preprocessing concatenates each series of 3 into 1 single image and resizes them to 450x200 pixels.
+The binary image preprocessing concatenates each series of 3 into 1 single image and resizes them to 200x450 pixels.
 Then it labels each one either ANIMAL or NOANIMAL based on the CSV. 
 Those are sorted into respective folders.
-Like the binary image preprocessing, the multiclass image preprocessing concatenates each series of 3 into 1 single image and resizes them to 450x200 pixels.  
+Like the binary image preprocessing, the multiclass image preprocessing concatenates each series of 3 into 1 single image and resizes them to 200x450 pixels.  
 However, the multiclass classification labels and sorts the images using the CSV into folders labeled by animal. 
 A seperate folder is created for each different animal species in the dataset unless there are less than 10 occurances in the data set. 
 Those are grouped together in the folder SOMETHINGHERE. There is also a folder for NOANIMAL. 
